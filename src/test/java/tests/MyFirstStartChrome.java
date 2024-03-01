@@ -11,12 +11,12 @@ public class MyFirstStartChrome {
     public void test_start() throws InterruptedException{
         WebDriver driver = new ChromeDriver();
         driver.navigate().to("https://demoqa.com/");
-        Thread.sleep(10000);
+        Thread.sleep(5000);
+        driver.quit();
+
+        //div[@class='card-body']/h5[contains(text(), 'Elements')]
+
+        //tagName[@attributeName='attributeValue']
     }
-@Test
-    public void test_start1() throws InterruptedException{
-        WebDriver driver = new FirefoxDriver();
-        driver.navigate().to("https://demoqa.com/");
-        Thread.sleep(10000);
-    }
+
 }
